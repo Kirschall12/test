@@ -29,7 +29,7 @@ import pandas as pd
 #ax.scatter(df[sel2], df[sel3])
 #st.pyplot(fig)
 
-df = pd.read_csv('Bastar Craton')
+df = pd.read_csv('Bastar Craton.csv')
 x = range(46)
 x = np.linspace(0, 50, 50)
 fig, ax = plt.subplots()
