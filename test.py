@@ -24,4 +24,6 @@ st.pyplot(fig)
 
 df = pd.read_csv('Bastar Craton.csv')
 
-df
+min = df['Mg', 'Si']
+sel2 = st.selectbox('Selection', ['Mg', 'Si'])
+ax.plot(min, sel2)
