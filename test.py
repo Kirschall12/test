@@ -9,6 +9,7 @@ st.title('Erste App')
 
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 sel1 = st.selectbox('Selection', [1,2,3])
 
