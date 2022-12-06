@@ -31,6 +31,8 @@ import pandas as pd
 
 df = pd.read_csv('Bastar Craton')
 x = range(46)
+x = np.linspace(0, 50, 50)
+fig, ax = plt.subplots()
 #sel2 = st.selectbox('Selection', ['Mg', 'Si'])
 sel3 = st.selectbox('Selection2', ['Mg', 'Si'])
 ax.scatter(x, df[sel3])
