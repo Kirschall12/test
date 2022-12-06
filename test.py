@@ -20,3 +20,8 @@ fig, ax = plt.subplots()
 
 ax.plot(x, x**sel1)
 st.pyplot(fig)
+
+
+df = pd.read_csv('Bastar Craton.csv')
+
+df
