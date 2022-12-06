@@ -14,8 +14,7 @@ sel1 = st.selectbox('Selection', [1,2,3])
 
 st.write('Deine Auswahl: ', sel1)
 
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
+x = np.linspace(0, 50, 50)
+fig = plt.plot(x, x**2)
 
 st.pyplot(fig)
