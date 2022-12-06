@@ -24,6 +24,7 @@ st.pyplot(fig)
 
 df = pd.read_csv('Bastar Craton.csv')
 
-min = df['Mg', 'Si']
 sel2 = st.selectbox('Selection', ['Mg', 'Si'])
-ax.plot(min, sel2)
+sel3 = st.selectbox('Selection2', ['Mg', 'Si'])
+ax.scatter(df[sel2], df[sel3])
+st.pyplot(fig)
