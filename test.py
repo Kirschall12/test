@@ -15,6 +15,7 @@ sel1 = st.selectbox('Selection', [1,2,3])
 st.write('Deine Auswahl: ', sel1)
 
 x = np.linspace(0, 50, 50)
-fig = plt.plot(x, x**2)
+fig, ax = plt.subplots()
 
+ax.plot(x, x**sel1)
 st.pyplot(fig)
